@@ -9,7 +9,7 @@ from dict2xml import dict2xml
 def get_lat_lng(request, getAddressDetails, flag):
     data_type = "json"
     endpoint = f"https://maps.googleapis.com/maps/api/geocode/{data_type}"
-    params = {"address": getAddressDetails, "key": "AIzaSyCOD3KvY2DDzEfel-NZ_LKIWXr86EF_EUw"}
+    params = {"address": getAddressDetails, "key": "Enter Your API KEY"}
     url_params = urlencode(params)
     url = f"{endpoint}?{url_params}"
     r = requests.get(url)
